@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Flashcard Quiz App</h1>
+
+    <div class="card">
+      <h2>{{ card.question }}</h2>
+
+      {% if show == 'true' %}
+        <p class="answer">{{ card.answer }}</p>
+      {% else %}
+        <p class="hidden">Click Show Answer</p>
+      {% endif %}
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav">
+
+      <a href="/?index={{ index-1 if index > 0 else 0 }}">
+        ⬅ Previous
+      </a>
+
+      <a href="/?index={{ index }}&show=true" class="show-btn">
+        👁 Show Answer
+      </a>
+
+      <a href="/?index={{ index+1 if index < total-1 else total-1 }}">
+        Next ➡
+      </a>
+
+    </div>
+
+    <hr>
+
+    <!-- ADD FLASHCARD -->
+    <h3>Add Flashcard</h3>
+
+    <form action="/add" method="POST">
+      <input type="text" name="question" placeholder="Enter question" required>
+      <input type="text" name="answer" placeholder="Enter answer" required>
+      <button type="submit">➕ Add Flashcard</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
