@@ -1,2 +1,21 @@
-# FlashcardQuizApp
-Flashcard Quiz App using Python Flask, HTML, and CSS.
+# Flashcard Quiz App
+
+This is a simple quiz application built using Python and Flask.
+
+## Features
+- Add flashcards
+- Take quizzes
+
+## Technologies Used
+- Python
+- Flask
+- HTML
+- CSS
+
+## How to Run
+1. Install Flask
+2. Run app.py
+3. Open localhost in browser
+
+## Author
+Pamuri Pavani
