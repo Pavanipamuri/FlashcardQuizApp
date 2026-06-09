@@ -19,3 +19,11 @@ This is a simple quiz application built using Python and Flask.
 
 ## Author
 Pamuri Pavani
+##Structure
+FlashcardQuizApp/
+│── app.py
+│── flashcards.json
+├── templates/
+│     └── index.html
+└── static/
+      └── style.css
