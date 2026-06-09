@@ -17,8 +17,6 @@ This is a simple quiz application built using Python and Flask.
 2. Run app.py
 3. Open localhost in browser
 
-## Author
-Pamuri Pavani
 ##Structure
 FlashcardQuizApp/
 │── app.py
@@ -27,3 +25,6 @@ FlashcardQuizApp/
 │     └── index.html
 └── static/
       └── style.css
+
+## Author
+Pamuri Pavani
